@@ -32,7 +32,9 @@ if platform.system() == "Windows":
     asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())  
 ```  
 您可能需要增加这些代码解决NotImplementedError。  
-原因参考：https://www.liangzl.com/get-article-detail-159402.html  
+原因参考：  
+https://www.liangzl.com/get-article-detail-159402.html  
+https://www.tornadoweb.org/en/stable/index.html#installation  
 是由于 python3.8 asyncio 在 windows 上默认使用 ProactorEventLoop 造成的，而不是之前的 SelectorEventLoop。jupyter 依赖 tornado，而 tornado 在 window 上需要使用 SelectorEventLoop，所以产生这个报错.
 
 ## 注意
