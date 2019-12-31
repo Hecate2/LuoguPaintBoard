@@ -22,6 +22,16 @@ https://github.com/ouuan/LuoguPaintBoard
   
 最后运行LuoguPaintBoard.py！这是一个HTTP服务器。启动后可以用浏览器访问http://localhost:55568。 
 
+## 对于Windows Python3.8用户
+import platform  
+  
+if platform.system() == "Windows":  
+    import asyncio  
+
+    asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())  
+  
+您可能需要增加这些代码解决NotImplementedError。
+
 ## 注意
 严禁使用宇宙战舰发起CC攻击。  
 不要把你的cookie透露给别人。这样几乎等于交出你的账号密码。  
