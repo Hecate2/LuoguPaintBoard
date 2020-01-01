@@ -1,8 +1,9 @@
 #coding:utf-8
 #IgnaleoG server for Luogu PaintBoard
+#https://github.com/Hecate2/LuoguPaintBoard
 #'https://www.luogu.com.cn/paintBoard'
 #'https://www.luogu.com.cn/paintBoard/board'
-#Paint 1 pixel every 10 seconds online
+#For every account, paint 1 pixel every 10 seconds online
 
 portList=[55568,]#本服务器监听端口
 
