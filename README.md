@@ -41,3 +41,7 @@ https://www.tornadoweb.org/en/stable/index.html#installation
 ## 注意
 严禁使用宇宙战舰发起CC攻击。  
 不要把你的cookie透露给别人。这样几乎等于交出你的账号密码。  
+如果你不填入正确的cookie而直接运行LuoguPaintBoard.py，就会报这样的错误：  
+```
+UnicodeEncodeError: 'latin-1' codec can't encode characters in position 16-22: ordinal not in range(256)
+```  
