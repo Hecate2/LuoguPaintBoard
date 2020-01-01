@@ -9,6 +9,9 @@ portList=[55568,]#本服务器监听端口
 import gevent,asyncio
 from gevent import monkey
 monkey.patch_all()
+#import platform
+#if platform.system() == "Windows":
+#    asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
 
 import requests
 from requests.packages.urllib3.exceptions import InsecureRequestWarning
@@ -31,10 +34,10 @@ headers = {
     'Connection':'keep-alive',
 }
 
-with open("cookies.json",'r') as cookiesjson:#[{第一个用户的cookies},{第二个用户的cookies},...]
+with open("cookies.json",'r',encoding='utf-8') as cookiesjson:#[{第一个用户的cookies},{第二个用户的cookies},...]
     cookies=json.load(cookiesjson)
 
-with open("picture.json",'r') as picturejson:
+with open("picture.json",'r',encoding='utf-8') as picturejson:
     pic=json.load(picturejson)
 
 RequestExceptions=( #遇到这些异常Exception时重试
