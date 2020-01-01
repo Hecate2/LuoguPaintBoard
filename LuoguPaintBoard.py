@@ -52,7 +52,7 @@ def data_generator():#每调用一次next(dataGen)，产生一个需要被画上
     try:
         for pixel in pic:#pixel==[x.y,c]，横坐标，纵坐标，颜色值
             print('正在作画，像素:',pixel)
-            yield {'x':pixel[0],'y':pixel[1],'z':pixel[2]}
+            yield {'x':pixel[0],'y':pixel[1],'color':pixel[2]}
     except GeneratorExit:
         print('这很奇怪。程序不应该执行到这里。即将抛出StopIteration')
 dataGen=data_generator()
