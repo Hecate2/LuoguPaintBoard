@@ -46,4 +46,4 @@ https://www.tornadoweb.org/en/stable/index.html#installation
 UnicodeEncodeError: 'latin-1' codec can't encode characters in position 16-22: ordinal not in range(256)
 ```  
 ## Thank Chthollists!
-![image](https://github.com/Hecate2/LuoguPaintBoard/tree/master/images/Chtholly&ArchLinux.png)
+![image](https://github.com/Hecate2/LuoguPaintBoard/tree/master/images/Chtholly%26ArchLinux.png)
