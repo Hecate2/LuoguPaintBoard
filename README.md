@@ -1,6 +1,7 @@
 # 洛谷冬日绘板
 2020年1月1日，洛谷冬日绘板  
 https://www.luogu.com.cn/paintBoard  
+图片转json的代码我就不做了。请参考其他大佬们的代码，比如https://github.com/search?utf8=%E2%9C%93&q=luogupaintboard&type=  
 
 ## 鸣谢
 首先感谢：  
