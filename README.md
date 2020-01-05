@@ -12,6 +12,7 @@ https://github.com/ouuan/LuoguPaintBoard
 然后感谢：  
 缇亚忒·示巴·伊格那雷奥  
 把最先进的宇宙战舰（之一）拿来民用！  
+本仓库代码远不代表其最强力量。框架IgnaleoG源于https://github.com/Hecate2/ISML_auto_voter。可自由添加其他微服务构成更大的系统。  
 
 ## 使用方法
 首先需要Python，版本大于等于3.7。安装时注意pip要添加到PATH。确保你的命令行可以正确运行pip。  
@@ -26,10 +27,8 @@ https://github.com/ouuan/LuoguPaintBoard
 ## 对于Windows Python3.8用户
 ```
 import platform  
-  
 if platform.system() == "Windows":  
     import asyncio  
-  
     asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())  
 ```  
 您可能需要增加这些代码解决NotImplementedError。  
